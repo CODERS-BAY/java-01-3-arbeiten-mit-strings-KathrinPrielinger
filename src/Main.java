@@ -2,14 +2,14 @@
 public class Main {
     public static void main(String[] args) {
 
-    //Lege einen String mit dem Inhalt “ Hello World! ” an (enthält vorne und hinten Leerzeichen).
-    String hW = " Hello World ";
+        //Lege einen String mit dem Inhalt “ Hello World! ” an (enthält vorne und hinten Leerzeichen).
+        String hW = " Hello World ";
 
-    //Gib den String und seine Länge auf der Konsole aus:
+        //Gib den String und seine Länge auf der Konsole aus:
         System.out.println(hW);
         System.out.println(hW.length());
 
-    //Gib den String in einigen Abwandlungen auf der Konsole aus:
+        //Gib den String in einigen Abwandlungen auf der Konsole aus:
         //alle Buchstaben in Großbuchstaben
         System.out.println(hW.toUpperCase());
 
@@ -25,8 +25,11 @@ public class Main {
         //ohne Leerzeichen zu Beginn des Texts
         System.out.println(hW.trim());
 
-    //Gib den String 15 mal wiederholt mit einem Zeilenumbruch zum Trennen aus (ohne die Codezeile 15 mal zu kopieren 😉)
-    System.out.println(hW.repeat(15));
+        //ohne Leerzeichen zu Beginn des Texts
+        System.out.println(hW.stripLeading());
+
+        //Gib den String 15 mal wiederholt mit einem Zeilenumbruch zum Trennen aus (ohne die Codezeile 15 mal zu kopieren 😉)
+        System.out.println(hW.repeat(15));
 
     }
 }
